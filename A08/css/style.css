@@ -1,0 +1,290 @@
+/* CSS Reset*/
+
+html {
+  color-scheme: dark;
+  font-family: system-ui 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  text-wrap: balance;
+  text-transform: capitalize;
+  padding-bottom: 0.5rem;
+}
+
+/* General Styles */
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+ul {
+  list-style: circle;
+}
+
+h1 {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: larger;
+}
+
+p {
+  text-wrap: wrap;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+header nav > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+nav a {
+  transition: color 0.3s, background-color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #393939;
+  text-shadow: 1px 1px 2px rgb(255, 153, 0), 0 0 1em rgb(250, 250, 250),
+    0 0 0.2em rgb(255, 255, 255);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid white;
+  padding: 2rem;
+  flex-grow: 1;
+  flex-basis: 15rem;
+  flex-shrink: 0;
+  max-width: 100dvw;
+  overflow: auto;
+}
+
+aside {
+  border: 1px solid white;
+  display: flex;
+  padding: 2rem;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  padding: 1rem;
+  margin: 1rem;
+  border: white 1px solid;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  overflow: auto;
+}
+
+table th {
+  background-color: #f2b23d;
+  color: #030101;
+}
+
+table tr,
+table th,
+table td {
+  border: 1px solid white;
+}
+
+tbody tr {
+  height: 8rem;
+}
+
+tbody tr td {
+  padding: 1rem;
+}
+
+/* Forms */
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+}
+
+form div label,
+.linear {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form textarea {
+  grid-column: span 2;
+  resize: vertical;
+}
+
+form .expand {
+  grid-column: span 2;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 425px) {
+  main > section {
+    padding: 1rem;
+  }
+
+  aside {
+    padding: 1rem;
+  }
+
+  header nav > ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  header {
+    flex-direction: column;
+  }
+}
+
+/* Classes */
+
+.items-center {
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-container span {
+  color: #f2b23d;
+  font-size: 1.5rem;
+}
+
+.logo-container img {
+  border-radius: 100%;
+}
+
+.link,
+.link:visited,
+.link:link {
+  color: #f5a5f5;
+}
+
+.hover,
+.link {
+  transition: color 0.3s;
+}
+
+.link:hover,
+.hover:hover {
+  color: #ef54ef;
+}
+
+.hover-bg {
+  transition: background-color 0.3s;
+}
+
+.hover-bg:hover {
+  background-color: #ef54ef;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.gallery img {
+  transition: scale 0.3s;
+}
+
+.gallery img:hover {
+  scale: 1.2;
+}
+
+.carrousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.carrousel .carrousel-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  gap: 2rem;
+}
+
+.carrousel .carrousel-buttons button {
+  width: 2rem;
+  height: 2rem;
+}
