@@ -66,7 +66,7 @@ header {
   padding: 1rem 0;
 }
 
-header nav > ul {
+header nav>ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -92,7 +92,7 @@ main {
   padding: 1rem;
 }
 
-main > section {
+main>section {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -182,7 +182,7 @@ form .expand {
 /* Media queries */
 
 @media only screen and (max-width: 425px) {
-  main > section {
+  main>section {
     padding: 1rem;
   }
 
@@ -190,7 +190,7 @@ form .expand {
     padding: 1rem;
   }
 
-  header nav > ul {
+  header nav>ul {
     display: flex;
     flex-direction: column;
   }
