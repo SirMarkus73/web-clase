@@ -1,170 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Landing page - Iteración 3</title>
-    <link
-      rel="stylesheet"
-      href="css/style.css"
-    />
-    <link
-      rel="icon"
-      href="favicon.ico"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="logo-container">
-        <img
-          src="img/gato.webp"
-          alt="gato con capucha"
-          width="55px"
-          height="55px"
-        />
-        <span>Marcos Barrero</span>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a
-              href="index.html"
-              class="active"
-            >
-              Sobre mi
-            </a>
-          </li>
-          <li><a href="informacion-escolar.html">Información escolar</a></li>
-          <li><a href="galeria-imatges.html">Galeria imágenes</a></li>
-          <li><a href="nou-treballador.html">Trabaja conmigo</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- Galeria d'imatges -->
-      <section>
-        <h1>Formulario trabajo</h1>
 
-        <fieldset>
-          <legend>Datos personales</legend>
-          <form
-            action="https://alumnat.cat/form"
-            method="post"
-          >
-            <label>
-              Nombre:
-              <input
-                type="text"
-                name="nombre"
-                placeholder="Edmund"
-              />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing page - Iteración 4</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/gato.webp" alt="gato con capucha" width="55px" height="55px" />
+      <span>Marcos Barrero</span>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html" class="active">
+            Sobre mi
+          </a>
+        </li>
+        <li><a href="informacion-escolar.html">Información escolar</a></li>
+        <li><a href="galeria-imatges.html">Galeria imágenes</a></li>
+        <li><a href="nou-treballador.html">Trabaja conmigo</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Galeria d'imatges -->
+    <section>
+      <h1>Formulario trabajo</h1>
+
+      <fieldset>
+        <legend>Datos personales</legend>
+        <form action="https://alumnat.cat/form" method="post">
+          <label>
+            Nombre:
+            <input type="text" name="nombre" placeholder="Edmund" />
+          </label>
+          <label>
+            Apellidos:
+            <input type="text" name="apellidos" placeholder="McMillen" />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" placeholder="yourEmail@email.com" />
+          </label>
+          <label>
+            Edad:
+            <input type="number" name="edad" min="18" max="80" />
+          </label>
+          <label>
+            Color Favorito:
+            <input name="color" type="color" />
+          </label>
+          <label>
+            Estudios:
+            <select>
+              <option value="eso">ESO</option>
+              <option value="bachillerato">Bachillerato</option>
+              <option value="ciclo">Ciclo Formativo</option>
+              <option value="universidad">Universidad</option>
+            </select>
+          </label>
+          <label>
+            Fotografia:
+            <input type="file" name="foto" />
+          </label>
+          <div>
+            Genero:
+            <label class="hover-bg">
+              Masculino
+              <input type="radio" name="genero" value="hombre" />
             </label>
-            <label>
-              Apellidos:
-              <input
-                type="text"
-                name="apellidos"
-                placeholder="McMillen"
-              />
+            <label class="hover-bg">
+              Femenino
+              <input type="radio" name="genero" value="hombre" />
             </label>
-            <label>
-              Email:
-              <input
-                type="email"
-                name="email"
-                placeholder="yourEmail@email.com"
-              />
+            <label class="hover-bg">
+              Otro
+              <input type="radio" name="genero" value="otro" />
             </label>
-            <label>
-              Edad:
-              <input
-                type="number"
-                name="edad"
-                min="18"
-                max="80"
-              />
-            </label>
-            <label>
-              Color Favorito:
-              <input
-                name="color"
-                type="color"
-              />
-            </label>
-            <label>
-              Estudios:
-              <select>
-                <option value="eso">ESO</option>
-                <option value="bachillerato">Bachillerato</option>
-                <option value="ciclo">Ciclo Formativo</option>
-                <option value="universidad">Universidad</option>
-              </select>
-            </label>
-            <label>
-              Fotografia:
-              <input
-                type="file"
-                name="foto"
-              />
-            </label>
-            <div>
-              Genero:
-              <label class="hover-bg">
-                Masculino
-                <input
-                  type="radio"
-                  name="genero"
-                  value="hombre"
-                />
-              </label>
-              <label class="hover-bg">
-                Femenino
-                <input
-                  type="radio"
-                  name="genero"
-                  value="hombre"
-                />
-              </label>
-              <label class="hover-bg">
-                Otro
-                <input
-                  type="radio"
-                  name="genero"
-                  value="otro"
-                />
-              </label>
-            </div>
-            <label>
-              Explicación:
-              <textarea
-                name="exp"
-                placeholder="Explica por qué quieres trabajar conmigo"
-              ></textarea>
-            </label>
-            <label class="expand linear">
-              Aceptas los términos y condiciones?
-              <input
-                type="checkbox"
-                name="terms"
-              />
-            </label>
-            <button
-              type="submit"
-              class="expand"
-            >
-              Enviar
-            </button>
-          </form>
-        </fieldset>
-      </section>
-    </main>
-    <footer>
-      <p>Propiedad de <b>Marcos Barrero</b></p>
-      <address>Ins Joaquim Mir</address>
-    </footer>
-  </body>
+          </div>
+          <label>
+            Explicación:
+            <textarea name="exp" placeholder="Explica por qué quieres trabajar conmigo"></textarea>
+          </label>
+          <label class="expand linear">
+            Aceptas los términos y condiciones?
+            <input type="checkbox" name="terms" />
+          </label>
+          <button type="submit" class="expand">
+            Enviar
+          </button>
+        </form>
+      </fieldset>
+    </section>
+  </main>
+  <footer>
+    <p>Propiedad de <b>Marcos Barrero</b></p>
+    <address>Ins Joaquim Mir</address>
+  </footer>
+</body>
+
 </html>

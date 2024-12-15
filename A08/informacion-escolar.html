@@ -1,298 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Landing page - Iteración 3</title>
-    <link
-      rel="stylesheet"
-      href="css/style.css"
-    />
-    <link
-      rel="icon"
-      href="favicon.ico"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="logo-container">
-        <img
-          src="img/gato.webp"
-          alt="gato con capucha"
-          width="55px"
-          height="55px"
-        />
-        <span>Marcos Barrero</span>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a
-              href="index.html"
-              class="active"
-            >
-              Sobre mi
-            </a>
-          </li>
-          <li><a href="informacion-escolar.html">Información escolar</a></li>
-          <li><a href="galeria-imatges.html">Galeria imágenes</a></li>
-          <li><a href="nou-treballador.html">Trabaja conmigo</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- Mis horario -->
-      <section>
-        <h1>Horario</h1>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Lunes</th>
-              <th>Martes</th>
-              <th>Miércoles</th>
-              <th>Jueves</th>
-              <th>Viernes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!--primera linea-->
-            <tr>
-              <td>
-                15:00
-                <br />
-                16:00
-              </td>
-              <td>
-                <b>M2</b> <br />
-                CF Roman, Dani <br />
-                A3
-              </td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td rowspan="2">
-                <b>M2</b> <br />
-                CF Roman, Dani <br />
-                A3
-              </td>
-            </tr>
-            <!--segunda linea-->
-            <tr>
-              <td>
-                16:00
-                <br />
-                17:00
-              </td>
-              <td rowspan="2">
-                <b>M4</b> <br />
-                CF Jimenez, Gasca <br />
-                A3
-              </td>
-              <td rowspan="2">
-                <b>M1</b> <br />
-                CF Salcedo, Yolanda <br />
-                A3
-              </td>
-              <td></td>
-              <td></td>
-            </tr>
-            <!--tercera linea-->
-            <tr>
-              <td>
-                17:00
-                <br />
-                18:00
-              </td>
-              <td>
-                <b>M4</b> <br />
-                CF Jimenez, Gasca <br />
-                A3
-              </td>
-              <td>
-                <b>M2</b> <br />
-                CF Roman, Dani <br />
-                A3
-              </td>
-              <td rowspan="2">
-                <b>M3</b> <br />
-                CF Rius, Adriana <br />
-                A3
-              </td>
-            </tr>
-            <!--quarta linea-->
-            <tr>
-              <td>
-                18:20
-                <br />
-                19:20
-              </td>
-              <td rowspan="2">
-                <b>M1</b> <br />
-                CF Salcedo, Yolanda <br />
-                A3
-              </td>
-              <td rowspan="2">
-                <b>AN</b> <br />
-                CF Herrero, Pilar <br />
-                A3
-              </td>
-              <td rowspan="2">
-                <b>M3</b> <br />
-                CF Rius, Adriana <br />
-                A3
-              </td>
-              <td rowspan="2">
-                <b>M3</b> <br />
-                CF Rius, Adriana <br />
-                A3
-              </td>
-            </tr>
-            <!--quinta linea-->
-            <tr>
-              <td>
-                19:20
-                <br />
-                20:20
-              </td>
-              <td></td>
-            </tr>
-            <!--sexta linea-->
-            <tr>
-              <td>
-                20:20
-                <br />
-                21:20
-              </td>
-              <td></td>
-              <td>
-                <b>M2</b> <br />
-                CF Roman, Dani <br />
-                A3
-              </td>
-              <td></td>
-              <td>
-                <b>T1DAW</b> <br />
-                CF Salcedo, Yolanda <br />
-                A3
-              </td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <!-- Mis módulos -->
-      <section class="items-center">
-        <h1>Módulos</h1>
-        <ul>
-          <li>
-            <a
-              href="https://moodle.insjoaquimmir.cat/course/view.php?id=402"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover"
-            >
-              <p>M1 (Sistemas operativos) - Salcedo, Yolanda</p>
-              <img
-                src="img/modulos/M1.webp"
-                alt="Modulo M1"
-                width="150px"
-                height="150x"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://moodle.insjoaquimmir.cat/course/view.php?id=232&section=2"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover"
-            >
-              <p>M2 (Bases de datos) - Roman, Dani</p>
 
-              <img
-                src="img/modulos/M2.webp"
-                alt="Modulo M2"
-                width="150px"
-                height="150px"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://moodle.insjoaquimmir.cat/course/view.php?id=90"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover"
-            >
-              <p>M3 (Programación) - Rius, Adriana</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing page - Iteración 4</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/gato.webp" alt="gato con capucha" width="55px" height="55px" />
+      <span>Marcos Barrero</span>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html" class="active">
+            Sobre mi
+          </a>
+        </li>
+        <li><a href="informacion-escolar.html">Información escolar</a></li>
+        <li><a href="galeria-imatges.html">Galeria imágenes</a></li>
+        <li><a href="nou-treballador.html">Trabaja conmigo</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Mis horario -->
+    <section>
+      <h1>Horario</h1>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--primera linea-->
+          <tr>
+            <td>
+              15:00
               <br />
-              <img
-                src="img/modulos/M3.webp"
-                alt="Modulo M3"
-                width="150px"
-                height="150px"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://moodle.insjoaquimmir.cat/course/view.php?id=223"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover"
-            >
-              <p>M4 (Lenguaje de marcas) - Jimenez, Gasca</p>
-              <img
-                src="img/modulos/M4.webp"
-                alt="Modulo M4"
-                width="150px"
-                height="150px"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://moodle.insjoaquimmir.cat/course/view.php?id=266"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover"
-            >
-              <p>T1DAW (Tutoria) - Salcedo, Yolanda</p>
-              <img
-                src="img/modulos/1DAW.webp"
-                alt="Modulo 1DAW"
-                width="150px"
-                height="150px"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://classroom.google.com/c/NzEwNTAzMzM1OTY0"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover"
-            >
-              <p>AN (Ingles) - Herrero, Pilar</p>
-              <img
-                src="img/modulos/AN.webp"
-                alt="Modulo AN"
-                width="150px"
-                height="150px"
-              />
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <p>Propiedad de <b>Marcos Barrero</b></p>
-      <address>Ins Joaquim Mir</address>
-    </footer>
-  </body>
+              16:00
+            </td>
+            <td>
+              <b>M2</b> <br />
+              CF Roman, Dani <br />
+              A3
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2">
+              <b>M2</b> <br />
+              CF Roman, Dani <br />
+              A3
+            </td>
+          </tr>
+          <!--segunda linea-->
+          <tr>
+            <td>
+              16:00
+              <br />
+              17:00
+            </td>
+            <td rowspan="2">
+              <b>M4</b> <br />
+              CF Jimenez, Gasca <br />
+              A3
+            </td>
+            <td rowspan="2">
+              <b>M1</b> <br />
+              CF Salcedo, Yolanda <br />
+              A3
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <!--tercera linea-->
+          <tr>
+            <td>
+              17:00
+              <br />
+              18:00
+            </td>
+            <td>
+              <b>M4</b> <br />
+              CF Jimenez, Gasca <br />
+              A3
+            </td>
+            <td>
+              <b>M2</b> <br />
+              CF Roman, Dani <br />
+              A3
+            </td>
+            <td rowspan="2">
+              <b>M3</b> <br />
+              CF Rius, Adriana <br />
+              A3
+            </td>
+          </tr>
+          <!--quarta linea-->
+          <tr>
+            <td>
+              18:20
+              <br />
+              19:20
+            </td>
+            <td rowspan="2">
+              <b>M1</b> <br />
+              CF Salcedo, Yolanda <br />
+              A3
+            </td>
+            <td rowspan="2">
+              <b>AN</b> <br />
+              CF Herrero, Pilar <br />
+              A3
+            </td>
+            <td rowspan="2">
+              <b>M3</b> <br />
+              CF Rius, Adriana <br />
+              A3
+            </td>
+            <td rowspan="2">
+              <b>M3</b> <br />
+              CF Rius, Adriana <br />
+              A3
+            </td>
+          </tr>
+          <!--quinta linea-->
+          <tr>
+            <td>
+              19:20
+              <br />
+              20:20
+            </td>
+            <td></td>
+          </tr>
+          <!--sexta linea-->
+          <tr>
+            <td>
+              20:20
+              <br />
+              21:20
+            </td>
+            <td></td>
+            <td>
+              <b>M2</b> <br />
+              CF Roman, Dani <br />
+              A3
+            </td>
+            <td></td>
+            <td>
+              <b>T1DAW</b> <br />
+              CF Salcedo, Yolanda <br />
+              A3
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- Mis módulos -->
+    <section class="items-center">
+      <h1>Módulos</h1>
+      <ul>
+        <li>
+          <a href="https://moodle.insjoaquimmir.cat/course/view.php?id=402" target="_blank" rel="noopener noreferrer"
+            class="hover">
+            <p>M1 (Sistemas operativos) - Salcedo, Yolanda</p>
+            <img src="img/modulos/M1.webp" alt="Modulo M1" width="150px" height="150x" />
+          </a>
+        </li>
+        <li>
+          <a href="https://moodle.insjoaquimmir.cat/course/view.php?id=232&section=2" target="_blank"
+            rel="noopener noreferrer" class="hover">
+            <p>M2 (Bases de datos) - Roman, Dani</p>
+
+            <img src="img/modulos/M2.webp" alt="Modulo M2" width="150px" height="150px" />
+          </a>
+        </li>
+        <li>
+          <a href="https://moodle.insjoaquimmir.cat/course/view.php?id=90" target="_blank" rel="noopener noreferrer"
+            class="hover">
+            <p>M3 (Programación) - Rius, Adriana</p>
+            <br />
+            <img src="img/modulos/M3.webp" alt="Modulo M3" width="150px" height="150px" />
+          </a>
+        </li>
+        <li>
+          <a href="https://moodle.insjoaquimmir.cat/course/view.php?id=223" target="_blank" rel="noopener noreferrer"
+            class="hover">
+            <p>M4 (Lenguaje de marcas) - Jimenez, Gasca</p>
+            <img src="img/modulos/M4.webp" alt="Modulo M4" width="150px" height="150px" />
+          </a>
+        </li>
+        <li>
+          <a href="https://moodle.insjoaquimmir.cat/course/view.php?id=266" target="_blank" rel="noopener noreferrer"
+            class="hover">
+            <p>T1DAW (Tutoria) - Salcedo, Yolanda</p>
+            <img src="img/modulos/1DAW.webp" alt="Modulo 1DAW" width="150px" height="150px" />
+          </a>
+        </li>
+        <li>
+          <a href="https://classroom.google.com/c/NzEwNTAzMzM1OTY0" target="_blank" rel="noopener noreferrer"
+            class="hover">
+            <p>AN (Ingles) - Herrero, Pilar</p>
+            <img src="img/modulos/AN.webp" alt="Modulo AN" width="150px" height="150px" />
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Propiedad de <b>Marcos Barrero</b></p>
+    <address>Ins Joaquim Mir</address>
+  </footer>
+</body>
+
 </html>

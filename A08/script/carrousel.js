@@ -23,9 +23,8 @@ function generateCarrousel(root, $images, img_width, img_height) {
 
   function insertImage(index) {
     $carrouselImages.innerHTML = `
-  <img src="${$images[index].src}" alt="${$images[index].alt}" width="${
-      img_width * 2
-    }px" height="${img_height * 2}px">
+  <img src="${$images[index].src}" alt="${$images[index].alt}" width="${img_width * 2
+      }px" height="${img_height * 2}px">
   `;
   }
 
